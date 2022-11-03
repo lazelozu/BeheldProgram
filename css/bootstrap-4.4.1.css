@@ -4992,9 +4992,35 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 .column {
-  float: left;
   width: 33.33%;
   padding: 5px;
+}
+.imagetwo {
+	width: 50%;
+}
+.imagefour {
+	width: 25%;
+}
+.imageeight {
+	width:12.5%;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+}
+
+figcaption {
+  background-color: white;
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+.imageone {
+	width: 100%;
 }
 .row::after {
   content: "";
@@ -6258,7 +6284,8 @@ a.close.disabled {
   bottom: 0;
 }
 
-.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+.bs-tooltip-top .ar
+::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   top: 0;
   border-width: 0.4rem 0.4rem 0;
   border-top-color: #000;
