@@ -4894,7 +4894,12 @@ input[type="button"].btn-block {
   left: 0;
   padding: 1.25rem;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
 .card-img,
 .card-img-top,
 .card-img-bottom {
@@ -4986,7 +4991,16 @@ input[type="button"].btn-block {
 .card-columns .card {
   margin-bottom: 0.75rem;
 }
-
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
